@@ -23,5 +23,11 @@ pipeline {
       }
     }
 
+    stage('Docker Pull') {
+      steps {
+        sh 'docker pull ugobase/hello-world-python:latest'
+      }
+    }
+
   }
 }
