@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Git Check') {
+      steps {
+        git(url: 'https://github.com/ugobase/CICD', branch: 'main')
+      }
+    }
+
   }
 }
